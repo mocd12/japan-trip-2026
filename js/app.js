@@ -60,6 +60,7 @@
     renderTools();
     renderTimeline();
     renderToday();
+    setupInstallBanner();
     // Pre-fetch weather for current city
     const todayDay = getTodayDay();
     if (todayDay && todayDay.weatherLocation) {
@@ -154,7 +155,7 @@
     const progress = ((dayIndex + 1) / totalDays) * 100;
 
     document.getElementById("today-date").textContent = `${day.weekdayHe} · ${formatDateHe(day.date)}`;
-    document.getElementById("today-city").textContent = day.cityHe + (day.cityEn && day.cityEn !== day.cityHe ? ` (${day.cityEn})` : "");
+    document.getElementById("today-city").textContent = day.cityHe + (day.cityEn && day.cityEn !== day.cityHe && day.cityEn.toLowerCase() !== "flight" ? ` (${day.cityEn})` : "");
     document.getElementById("progress-fill").style.width = progress + "%";
     document.getElementById("progress-text").textContent = `יום ${dayIndex + 1} מתוך ${totalDays}`;
 
@@ -279,7 +280,7 @@
             </div>
             <div class="day-card-weather" data-wloc="${day.weatherLocation || ""}">🌤️</div>
           </div>
-          <div class="day-card-city">${day.cityHe}${day.cityEn && day.cityEn !== day.cityHe ? ` (${day.cityEn})` : ""}</div>
+          <div class="day-card-city">${day.cityHe}${day.cityEn && day.cityEn !== day.cityHe && day.cityEn.toLowerCase() !== "flight" ? ` (${day.cityEn})` : ""}</div>
           <div class="day-card-summary">${day.summary}</div>
         </div>
       `;
@@ -320,7 +321,7 @@
     let html = `
       <div class="day-header">
         <h2>${day.weekdayHe} · ${formatDateHe(day.date)}</h2>
-        <div class="meta">${day.cityHe}${day.cityEn ? ` (${day.cityEn})` : ""}${day.area ? " · " + day.area : ""}</div>
+        <div class="meta">${day.cityHe}${day.cityEn && day.cityEn.toLowerCase() !== "flight" ? ` (${day.cityEn})` : ""}${day.area ? " · " + day.area : ""}</div>
         ${hotel ? `<div class="meta mt-8">🏨 ${hotel.mapsUrl ? `<a href="${hotel.mapsUrl}" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">${hotel.nameHe}</a>` : hotel.nameHe} (${hotel.nameEn})</div>` : ""}
 
         <div class="day-weather-card" id="day-weather-box">
