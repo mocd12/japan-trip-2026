@@ -13,7 +13,8 @@
     tokyo: { lat: 35.67, lng: 139.76, name: "טוקיו (Tokyo)" },
     hakone: { lat: 35.23, lng: 139.10, name: "האקונה (Hakone)" },
     osaka: { lat: 34.69, lng: 135.50, name: "אוסקה (Osaka)" },
-    kyoto: { lat: 35.01, lng: 135.77, name: "קיוטו (Kyoto)" }
+    kyoto: { lat: 35.01, lng: 135.77, name: "קיוטו (Kyoto)" },
+    dubai: { lat: 25.20, lng: 55.27, name: "דובאי (Dubai)" }
   };
 
   const WEATHER_CODES = {
@@ -190,7 +191,7 @@
 
     const remEl = document.getElementById("today-reminders");
     if (reminders.length === 0) {
-      remEl.innerHTML = `<p class="text-muted">אין תזכורות מיוחדות להיום</p>`;
+      remEl.innerHTML = `<div class="empty-state"><span class="empty-icon">✨</span>אין תזכורות מיוחדות להיום – יום רגוע</div>`;
     } else {
       const statuses = lsGet("res_status", {});
       remEl.innerHTML = reminders.map(r => {
@@ -531,7 +532,7 @@
       const weekday = ["יום א׳","יום ב׳","יום ג׳","יום ד׳","יום ה׳","יום ו׳","שבת"][d.getDay()];
 
       return `
-        <div class="weather-day-card ${isToday ? "today" : ""}">
+        <div class="weather-day-card ${isToday ? "today" : ""} ${date >= "2026-09-28" && date <= "2026-10-14" ? "trip-day" : ""}">
           <div class="w-icon">${info.icon}</div>
           <div class="w-info">
             <div class="w-date">${weekday} · ${formatDateHe(date)}${isToday ? " (היום)" : ""}</div>
@@ -667,6 +668,27 @@
           ? (type === "luggage" ? "✓ בוצע" : "✓ הוזמן")
           : (type === "luggage" ? "סמן כבוצע" : "סמן כהוזמן");
       });
+    });
+  }
+
+
+  // ----- Install banner -----
+  function setupInstallBanner() {
+    const banner = document.getElementById("install-banner");
+    if (!banner) return;
+    if (localStorage.getItem("japan2026_install_dismissed")) return;
+    // Show after short delay if not standalone
+    const isStandalone = window.matchMedia("(display-mode: standalone)").matches || window.navigator.standalone;
+    if (isStandalone) return;
+    setTimeout(() => banner.classList.remove("hidden"), 2500);
+    document.getElementById("install-dismiss")?.addEventListener("click", () => {
+      banner.classList.add("hidden");
+      localStorage.setItem("japan2026_install_dismissed", "1");
+    });
+    document.getElementById("install-btn")?.addEventListener("click", () => {
+      banner.classList.add("hidden");
+      localStorage.setItem("japan2026_install_dismissed", "1");
+      alert("בדפדפן: לחצו על ⋮ או Share ← הוסף למסך הבית");
     });
   }
 
