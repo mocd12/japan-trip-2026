@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <meta name="theme-color" content="#1e3a5f" />
+  <meta name="theme-color" content="#9B1B30" />
   <meta name="description" content="מלווה טיול יפן ספטמבר–אוקטובר 2026 – לוח זמנים, מזג אוויר, טיפים וכלים" />
   <title>טיול יפן 2026 | Japan Trip Companion</title>
   <link rel="manifest" href="manifest.json" />
@@ -40,9 +40,10 @@
         </div>
       </div>
 
-      <div class="section-card">
+      <div class="section-card clickable-plan" id="btn-open-day" role="button" tabindex="0">
         <h2>תוכנית יומית</h2>
         <div id="today-timeline" class="timeline-mini"></div>
+        <p class="text-muted" style="margin-top:8px;font-size:0.85rem">לחצו לפתיחת היום המלא</p>
       </div>
 
       <div class="section-card">
@@ -54,8 +55,6 @@
         <h2>צ׳ק־ליסט מהיר</h2>
         <div id="today-checklist" class="checklist"></div>
       </div>
-
-      <button class="btn-primary" id="btn-open-day">פתח יום מלא</button>
     </section>
 
 
@@ -162,6 +161,13 @@
   </main>
 
   <!-- Bottom Navigation -->
+  <!-- Install banner -->
+  <div id="install-banner" class="install-banner hidden">
+    <p>הוסיפו את האפליקציה למסך הבית לשימוש מהיר ואופליין</p>
+    <button type="button" id="install-btn">הוסף</button>
+    <button type="button" class="dismiss" id="install-dismiss" aria-label="סגור">✕</button>
+  </div>
+
   <nav class="bottom-nav">
     <button class="nav-btn active" data-view="today">
       <span class="nav-icon">📅</span>
