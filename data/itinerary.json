@@ -273,7 +273,7 @@
       "area": "ישראל → דובאי",
       "hotelId": null,
       "summary": "טיסה לדובאי בערב",
-      "weatherLocation": null,
+      "weatherLocation": "dubai",
       "timeline": [
         {
           "time": "19:45",
