@@ -1,1 +1,264 @@
-PLACEHOLDER_TOO_LARGE
+{
+  "trip": {
+    "titleHe": "טיול יפן ספטמבר–אוקטובר 2026",
+    "titleEn": "Japan Trip Sep–Oct 2026",
+    "start": "2026-09-28",
+    "end": "2026-10-14",
+    "groupSize": 10,
+    "currencyRate": 0.0186,
+    "currencyNote": "1 יֶן ≈ 0.0186 ש״ח | 100 ש״ח ≈ 5,368 יֶן",
+    "timeDiff": "+7 שעות מישראל"
+  },
+  "flights": [
+    {
+      "type": "outbound",
+      "date": "2026-09-28",
+      "from": "תל אביב (Tel Aviv)",
+      "to": "דובאי (Dubai)",
+      "airline": "Flydubai",
+      "flightNo": "EK2471",
+      "depart": "19:45",
+      "arrive": "00:05",
+      "notes": "עצירה של כשעתיים וחצי בדובאי"
+    },
+    {
+      "type": "outbound",
+      "date": "2026-09-29",
+      "from": "דובאי טרמינל 3 (Dubai T3)",
+      "to": "טוקיו (Tokyo)",
+      "airline": "Emirates",
+      "flightNo": "EK0318",
+      "depart": "02:40",
+      "arrive": "17:35",
+      "notes": "הגעה לנריטה אחר הצהריים"
+    },
+    {
+      "type": "return",
+      "date": "2026-10-13",
+      "from": "טוקיו נריטה טרמינל 2 (Narita T2)",
+      "to": "דובאי (Dubai)",
+      "airline": "Emirates",
+      "flightNo": "EK0319",
+      "depart": "22:30",
+      "arrive": "04:50",
+      "notes": "עצירה של כשעתיים וחצי בדובאי"
+    },
+    {
+      "type": "return",
+      "date": "2026-10-14",
+      "from": "דובאי טרמינל 3 (Dubai T3)",
+      "to": "תל אביב (Tel Aviv)",
+      "airline": "Flydubai",
+      "flightNo": "EK2369",
+      "depart": "07:05",
+      "arrive": "09:35",
+      "notes": "הגעה בבוקר"
+    }
+  ],
+  "hotels": [
+    {
+      "id": "ginza",
+      "nameHe": "מיצוי גרדן הוטל גינזה פרימייר",
+      "nameEn": "Mitsui Garden Hotel Ginza Premier",
+      "cityHe": "טוקיו",
+      "cityEn": "Tokyo",
+      "area": "גינזה (Ginza)",
+      "checkIn": "2026-09-29",
+      "checkOut": "2026-10-03",
+      "nights": 4,
+      "bookingUrl": "https://www.booking.com/hotel/jp/mitsui-garden-ginza-premier-chuo.he.html",
+      "notes": "לבדוק שירות העברת מזוודות לקיוטו ולהאקונה",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mitsui%20Garden%20Hotel%20Ginza%20Premier%20Tokyo"
+    },
+    {
+      "id": "hakone",
+      "nameHe": "האקונה הוטל",
+      "nameEn": "Hakone Hotel",
+      "cityHe": "האקונה",
+      "cityEn": "Hakone",
+      "area": "אגם אשי (Lake Ashi)",
+      "checkIn": "2026-10-03",
+      "checkOut": "2026-10-04",
+      "nights": 1,
+      "bookingUrl": "https://www.booking.com/hotel/jp/hakone.he.html",
+      "notes": "אונסן מעולה עם נוף לאגם. לבקש הזמנת מסעדה ל-17:30 ולמוניות ב-4/10",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hakone%20Hotel%20Hakone"
+    },
+    {
+      "id": "osaka",
+      "nameHe": "הולידיי אין אקספרס אוסקה סיטי סנטר",
+      "nameEn": "Holiday Inn Express Osaka City Center",
+      "cityHe": "אוסקה",
+      "cityEn": "Osaka",
+      "area": "מרכז העיר (City Center)",
+      "checkIn": "2026-10-04",
+      "checkOut": "2026-10-06",
+      "nights": 2,
+      "bookingUrl": "https://www.booking.com/hotel/jp/holiday-inn-express-osaka-city-centre-midosuji.he.html",
+      "notes": "",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Holiday%20Inn%20Express%20Osaka%20City%20Center%20Osaka"
+    },
+    {
+      "id": "kyoto",
+      "nameHe": "קרוס הוטל קיוטו",
+      "nameEn": "Cross Hotel Kyoto",
+      "cityHe": "קיוטו",
+      "cityEn": "Kyoto",
+      "area": "מרכז קיוטו (Central Kyoto)",
+      "checkIn": "2026-10-06",
+      "checkOut": "2026-10-10",
+      "nights": 4,
+      "bookingUrl": "https://www.booking.com/hotel/jp/cross-hotel-kyoto.he.html",
+      "notes": "מיקום מעולה ליד שוק נישיקי ופונטוצ'ו. לבדוק העברת מזוודות לטוקיו",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cross%20Hotel%20Kyoto%20Kyoto"
+    },
+    {
+      "id": "shibuya",
+      "nameHe": "שיבויה סטרים אקסל הוטל",
+      "nameEn": "Shibuya Stream Excel Hotel",
+      "cityHe": "טוקיו",
+      "cityEn": "Tokyo",
+      "area": "שיבויה (Shibuya)",
+      "checkIn": "2026-10-10",
+      "checkOut": "2026-10-13",
+      "nights": 3,
+      "bookingUrl": "https://www.booking.com/hotel/jp/shibuya-stream-excel-tokyu.he.html",
+      "notes": "יציאה ישירה לשיבויה סטרים. הסעה פרטית לנריטה ב-17:00 ב-13/10",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Shibuya%20Stream%20Excel%20Hotel%20Tokyo"
+    }
+  ],
+  "tips": {
+    "beforeTrip": [
+      "כל אחד חייב למלא טופס כניסה דיגיטלי ליפן ולשמור צילום מסך של קוד ה-QR",
+      "להוריד אפליקציות: Google Maps, Uber (טוקיו ואוסקה), GO (האקונה), Suica (רק לאייפון)",
+      "אין לחרוג אפילו בגרם אחד במשקל – Emirates מקפידים מאוד",
+      "להגיע עם מינימום בגדים אם בונים על קניות"
+    ],
+    "apps": [
+      { "name": "Google Maps", "note": "ניווט בסיסי" },
+      { "name": "Uber", "note": "טוקיו ואוסקה" },
+      { "name": "GO", "note": "האקונה" },
+      { "name": "Suica", "note": "רק לאייפון – אנדרואיד קונים כרטיס פיזי" },
+      { "name": "AccuWeather / WeatherJapan", "note": "מזג אוויר מעולה" }
+    ],
+    "culture": [
+      "אין ספסלי ישיבה ברחוב ואין כמעט פחי אשפה – קחו שקית אשפה בתיק",
+      "לא נהוג לאכול בהליכה",
+      "לא מדברים בטלפון בתחבורה ציבורית או במעליות",
+      "משוחחים בשקט",
+      "בדרגנועים עומדים בצד שמאל (חוץ מאוסקה – שם ימין)",
+      "לא מעשנים מחוץ לפינות עישון",
+      "לא בכל מסעדה יש סכו״ם מערבי",
+      "לא עוקפים תורים – הנימוס והסדר חשובים מאוד",
+      "היפנים מאוד מסודרים ולא פתוחים לשינויים"
+    ],
+    "cash": [
+      "מסעדות מקומיות רבות",
+      "דוכני שווקים (נישיקי, צוקיג'י)",
+      "מקדשים",
+      "מכונות הטענה של Suica"
+    ],
+    "shopping": [
+      { "name": "MUJI", "note": "סחורה טובה לא ממותגת, זול ומומלץ" },
+      { "name": "7-Eleven", "note": "אוכל ונשנושים מעולים לחדר" },
+      { "name": "Don Quijote", "note": "קופת טקס פרי בקומה 7" },
+      { "name": "רחוב Ueno", "note": "קניות טובות, מתחת למסילה דוכני נעליים ובגדים" }
+    ],
+    "plugs": "שקעים כמו תקע אמריקאי",
+    "weatherApps": "AccuWeather או WeatherJapan"
+  },
+  "luggageTransfers": [
+    {
+      "id": "ginza-kyoto",
+      "from": "גינזה (Ginza)",
+      "to": "קיוטו (Kyoto)",
+      "when": "לפני היציאה להאקונה / בזמן השהייה בגינזה",
+      "notes": "לבדוק עם המלון בגינזה"
+    },
+    {
+      "id": "hakone-trolley",
+      "from": "גינזה",
+      "to": "האקונה",
+      "when": "3/10",
+      "notes": "רק טרולי קטן – כלי רחצה, כדורים ובגדים ל-3 לילות"
+    },
+    {
+      "id": "kyoto-tokyo",
+      "from": "קיוטו (Kyoto)",
+      "to": "שיבויה (Shibuya)",
+      "when": "לפני 10/10",
+      "notes": "לבדוק עם מלון קיוטו"
+    },
+    {
+      "id": "final-narita",
+      "from": "שיבויה",
+      "to": "נריטה",
+      "when": "13/10 בשעה 17:00",
+      "notes": "הסעה פרטית חובה – 20 פריטי כבודה"
+    }
+  ],
+  "reservations": [
+    {
+      "id": "shibuya-sky",
+      "title": "Shibuya Sky",
+      "deadline": "להזמין בדיוק 4 שבועות מראש",
+      "slot": "18:30",
+      "date": "2026-10-10",
+      "status": "pending"
+    },
+    {
+      "id": "hakone-dinner",
+      "title": "ארוחת ערב בהאקונה",
+      "deadline": "לבקש מהמלון במייל דרך Booking",
+      "time": "17:30",
+      "date": "2026-10-03",
+      "status": "pending"
+    },
+    {
+      "id": "ginza-transfer",
+      "title": "הסעה פרטית גינזה → האקונה",
+      "notes": "להזמין מ-Booking, עלות ≈1,900 ₪",
+      "date": "2026-10-03",
+      "status": "pending"
+    },
+    {
+      "id": "arrival-taxi",
+      "title": "מוניות גדולות משדה התעופה",
+      "notes": "מיניבוס ≈931 ₪ / מיני-ואן ≈1,495 ₪ ל-10 אנשים",
+      "date": "2026-09-29",
+      "status": "pending"
+    },
+    {
+      "id": "tea-ceremony",
+      "title": "טקס תה + קימונו (Maikoya Gion)",
+      "time": "11:20",
+      "date": "2026-10-08",
+      "notes": "להגיע 10 דקות לפני, ≈165 ₪ לאדם",
+      "status": "pending"
+    }
+  ],
+  "days": [
+    {
+      "date": "2026-09-28",
+      "weekdayHe": "יום ב׳",
+      "cityHe": "טיסה",
+      "cityEn": "Flight",
+      "area": "ישראל → דובאי",
+      "hotelId": null,
+      "summary": "טיסה לדובאי בערב",
+      "weatherLocation": null,
+      "timeline": [
+        { "time": "19:45", "title": "המראה מתל אביב", "details": "Flydubai EK2471" },
+        { "time": "00:05", "title": "הגעה לדובאי", "details": "עצירה של כשעתיים וחצי" }
+      ],
+      "checklist": [
+        "לוודא שכל המסמכים וה-QR מוכנים",
+        "בדיקת משקל מזוודות אחרונה",
+        "הורדת אפליקציות"
+      ],
+      "restaurants": [],
+      "mapMarkers": [],
+      "notes": "טיסה ראשונה בדרך ליפן"
+    }
+  ]
+}
