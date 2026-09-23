@@ -268,7 +268,7 @@
     {
       "date": "2026-09-28",
       "weekdayHe": "יום ב׳",
-      "cityHe": "טיסה",
+      "cityHe": "טיסה לדובאי",
       "cityEn": "",
       "area": "ישראל → דובאי",
       "hotelId": null,
@@ -1225,11 +1225,11 @@
     {
       "date": "2026-10-14",
       "weekdayHe": "יום ד׳",
-      "cityHe": "טיסה",
-      "cityEn": "Flight",
+      "cityHe": "טיסה לתל אביב",
+      "cityEn": "",
       "area": "דובאי → תל אביב",
       "hotelId": null,
-      "summary": "טיסת המשך הביתה",
+      "summary": "טיסה לתל אביב (דרך דובאי)",
       "weatherLocation": null,
       "timeline": [
         {
